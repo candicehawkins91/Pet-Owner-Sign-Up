@@ -1,13 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet-Owner-Sign-Up</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pet Owner Sign-Up</title>
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
 </head>
 <body>
-    
 
-    
+  <form id="petForm">
+    <h2 class="mb-3 text-center">Pet Owner Sign-Up</h2>
+
+    <!-- Owner Info -->
+    <div class="mb-3">
+      <label for="name" class="form-label">Owner Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" id="email" class="form-control" placeholder="Enter your email">
+    </div>
+
+    <div class="mb-3">
+      <label for="phone" class="form-label">Phone</label>
+      <input type="tel" id="phone" class="form-control" placeholder="555-555-5555">
+    </div>
+
+    <div class="mb-3">
+      <label for="city" class="form-label">City</label>
+      <input type="text" id="city" class="form-control" placeholder="City">
+    </div>
+
+    <div class="mb-3">
+      <label for="zip" class="form-label">Zip Code</label>
+      <input type="text" id="zip" class="form-control" placeholder="Zip Code">
+    </div>
+
+    <!-- Pet Info -->
+    <div class="mb-3">
+      <label for="petName" class="form-label">Pet Name</label>
+      <input type="text" id="petName" class="form-control" placeholder="Pet's name">
+    </div>
+
+    <!-- Bonus Task: Pet Type -->
+    <div class="mb-3">
+      <label for="petType" class="form-label">Pet Type</label>
+      <select id="petType" class="form-select">
+        <option value="">Select a type</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Fish">Fish</option>
+        <option value="Bird">Bird</option>
+        <option value="Bird">Horse</option>
+      </select>
+    </div>
+
+    <!-- IMPORTANT: type="button", not submit -->
+    <button type="button" id="saveBtn" class="btn btn-primary w-100">Sign Up</button>
+  </form>
+
+  <script src="script.js"></script>
 </body>
 </html>
